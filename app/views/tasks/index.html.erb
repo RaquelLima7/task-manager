@@ -1,23 +1,33 @@
-<h1>My Tasks</h1>
+<div class="card">
 
-<ul id="tasks">
-  <% @tasks.each do |task| %>
-  <p>
-    <% if task.completed %>
-      <i class="fa fa-check-square-o"></i>
-    <% else %>
-      <i class="fa fa-square-o"></i>
-    <% end %>
-    <%= link_to task.title, task_path(task.id) %>
-    <%= link_to task_path(task.id), method: :delete, data: { confirm: "Are you sure?"} do %>
-      <i class="fa fa-trash-o" aria-hidden="true"></i>
-    <% end %>
-  </p>
-  <% end %>
-</ul>
+<div class="row home">
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <h1 class="tasks">My Tasks</h1>
+      <div class="homebutton">
+        <%= link_to new_task_path, class: 'btn btn-success'  do %>
+        <i class="fa fa-plus"></i> Add a new task
+        <% end %>
+      </div>
+  </div>
 
-<hr>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <ul id="tasks">
+      <% @tasks.each do |task| %>
+      <p>
+        <% if task.completed %>
+          <i class="fas fa-check-circle"></i>
+        <% else %>
+          <i class="far fa-circle"></i>
+        <% end %>
+        <%= link_to task.title, task_path(task.id), class: "textform" %>
+        <%= link_to task_path(task.id), method: :delete, data: { confirm: "Are you sure?"} do %>
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        <% end %>
+      </p>
+      <% end %>
+    </ul>
+  </div>
+</div>
+  <hr>
 
-<%= link_to new_task_path do %>
-  <i class="fa fa-plus"></i> Add a new task
-<% end %>
+</div>

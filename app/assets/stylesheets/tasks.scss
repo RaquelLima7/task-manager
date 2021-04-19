@@ -1,3 +1,73 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    text-decoration: none;
+}
+
+.card {
+  margin: 30px 50px 10px 50px;
+  padding: 0.5em 50px;
+}
+
+.home {
+  margin-top: 4em;
+}
+
+.homebutton {
+  text-align: center;
+}
+
+.tasks {
+  text-align: center;
+  color: green;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+.task {
+  border: 1px solid rgba(127, 233, 127, 0.61);
+  margin:5px;
+}
+
+.edit {
+  background-color: #0e2707;
+  color:honeydew;
+}
+
+.edit:hover {
+  transform: scale(1.05);
+  color:honeydew;
+}
+
+.info {
+  padding: 10px;
+}
+
+.title {
+  text-align: left;
+  color: wheat;
+  background-color: green;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+
+.textform, p {
+  color: #195309;
+  font-size: 17px;
+}
+
+.color {
+    background-color: rgba(127, 233, 127, 0.295);
+}
+
+.link {
+  color: #499D44;
+}
+
+.fas, .far, .fa {
+  color: #09581b;
+}
