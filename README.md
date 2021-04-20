@@ -1,24 +1,7 @@
-# README
+# Task Manager is a web application made with Ruby on Rails 💎 and Bootstrap. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Task Manager, you can list, view the details, add, edit and remove a task. 📝
 
-Things you may want to cover:
+<br>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img src="task.gif" alt="task">
